@@ -45,15 +45,34 @@
 .nav_link {
   text-decoration: none;
   list-style: none;
-
+ transition: all 0.5s ease;
   text-align: center;
 }
+
 .nav_item {
   text-decoration: none;
   list-style: none;
+  transition: all 0.5s ease;
+  padding: 10px ;
+  font-weight: 800;
+  text-wrap: nowrap;
+  
+}
+.nav_item:hover{
+  text-decoration: none;
+  list-style: none;
+  
+  background-color:  #FF900E;
+  padding: 10px;
+  color: white;
+
+  .nav_link {
+    color: white;
+    }
 }
 .nav_item:hover {
   border-bottom: 1px solid #424242;
+  color: white;
 }
 
 .nav_title {
@@ -296,8 +315,14 @@
   width: 100%;
   max-width: 600px;
   height: auto;
+  
+    transition: all 0.5s ease;
+}
+.feature_img:hover {
+ 
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
     rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    transform: scale(1.1);
 }
 
 .feature_content_div {
@@ -945,6 +970,10 @@
 
 .sponsor_img_div {
   max-width: 165.83px;
+  transition: all 0.5s ease;
+}
+.sponsor_img_div:hover {
+ transform: scale(1.1);
 }
 
 /* sponsor responsive design start */
