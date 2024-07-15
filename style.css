@@ -323,8 +323,8 @@
    
 
     .feature_img_container{
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(4, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+       padding: 10px;
     
     }
     .feature{
@@ -334,12 +334,17 @@
 @media((min-width:300.1px) and  (max-width:576px)){
     .feature{
         grid-template-columns: repeat(1, 1fr);
+       
+        
     }
 
     .feature_img_container{
         grid-template-columns: repeat(2, 1fr);
-      
+       padding: 10px;
     
+    }
+    .feature_img_div{
+        max-width: 100%;
     }
 }
 @media((min-width:577.1px) and  (max-width:1100px)){
@@ -440,8 +445,8 @@ transition-duration: 0.5s;
 .ten_years{
 border-radius: 8px;
 background: rgb(255, 144, 14);
-max-width: 342px;
-max-height: 200px;
+max-width: 300px;
+max-height: 150px;
 width: 342px;
 height: 200px;
 display: flex;
@@ -450,7 +455,186 @@ align-items: center;
 flex-direction: column;
 color: white;
 position: absolute;
-left: 450px;
-top: 850px;
+left: 480px;
+top: 900px;
 font-size: 25px;
 }
+
+
+/* love and enjoy responsive design start  */
+@media (max-width: 576px) {
+    .love_enjoy{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 5.75rem;
+        max-width:1250px ;
+        position: relative;
+    
+    }
+
+    
+    .ten_years{
+        display: none;
+    }
+    .love_enjoy_title{
+        font-size: 30px;
+    
+    }
+
+    .love_enjoy_img{
+       max-width: 300px;
+       max-height: 400px;
+    }
+    .love_enjoy_img_div{
+       display: flex;
+       justify-content: center;
+       align-items: center;
+    }
+    .love_enjoy_card_parent{
+        padding: 10px;
+    }
+    .love_enjoy_card{
+        height: auto;
+    }
+
+    .love_enjoy_first_para{
+        padding: 10px;
+    }
+  }
+  
+  /* @media ((min-width: 440.1px) and (max-width:576px)) {
+    
+  } */
+  @media (min-width: 576.1px) and (max-width: 768px) {
+    .love_enjoy{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 5.75rem;
+        max-width:1250px ;
+        position: relative;
+    
+    }
+
+    
+    .ten_years{
+        display: none;
+    }
+
+    .love_enjoy_img{
+        max-width: 600px;
+        max-height: auto;
+     }
+
+     .love_enjoy_img_div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+     }
+     .love_enjoy_card_parent{
+         padding: 10px;
+     }
+     .love_enjoy_card{
+         height: auto;
+     }
+ 
+     .love_enjoy_first_para{
+         padding: 10px;
+     }
+  }
+  @media (min-width: 768.1px) and (max-width: 992px) {
+    .love_enjoy{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 5.75rem;
+        max-width:1250px ;
+        position: relative;
+    
+    }
+
+    
+  
+    .love_enjoy_img{
+        max-width: 600px;
+        max-height: auto;
+     }
+
+     .love_enjoy_img_div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+     }
+     .love_enjoy_card_parent{
+         padding: 10px;
+     }
+     .love_enjoy_card{
+         height: auto;
+     }
+ 
+     .love_enjoy_first_para{
+         padding: 10px;
+     }
+
+     .ten_years{
+      display: none;
+        }
+  
+  }
+  @media (min-width: 992.1px) and (max-width: 1200px) {
+ 
+    .love_enjoy{
+       width: 90%;
+    
+    }
+
+    
+    .ten_years{
+        display: none;
+    }
+
+    .love_enjoy_img{
+        max-width: 100%;
+        max-height: auto;
+     }
+
+     .love_enjoy_img_div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+     }
+     .love_enjoy_card_parent{
+         padding: 10px;
+     }
+     .love_enjoy_card{
+         height: auto;
+     }
+ 
+     .love_enjoy_first_para{
+         padding: 10px;
+     }
+
+     .ten_years{
+        border-radius: 8px;
+        background: rgb(255, 144, 14);
+        max-width: 342px;
+        max-height: 200px;
+        width: 200px;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        color: white;
+        position: absolute;
+        left:calc(1000px - 450px);
+        top: 700px;
+        font-size: 20px;
+        }
+  
+  }
+  @media (min-width: 1200.1px) and (max-width: 1600px) {
+    .love_enjoy{
+        width: 90%;
+     
+     }
+ 
+  }
