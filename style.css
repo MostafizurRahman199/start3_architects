@@ -638,3 +638,306 @@ font-size: 25px;
      }
  
   }
+
+
+  /* facts design start */
+
+
+  .facts{
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 30px;
+    max-width: 100%;
+  }
+  .facts_content{
+   display: grid;
+   grid-template-rows: repeat(2, 1fr);
+  }
+
+.facts_title{
+color: rgb(19, 19, 19);
+font-size: 45px;
+font-weight: 700;
+text-align: left;
+}
+
+.facts_content_para{
+color: rgb(114, 114, 114);
+font-size: 16px;
+font-weight: 400;
+line-height: 26px;
+letter-spacing: 0%;
+text-align: left;
+}
+  .fact_logo_container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 100px;
+    align-items: center;
+    justify-items: center;
+  }
+
+  .logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 1px solid rgb(255, 144, 14);
+    border-radius: 8px;
+   
+    transition-duration: 1s;
+    transition: all 1s ease;; 
+    /* transition-timing-function: ease; */
+  }
+
+
+  .logo:hover{
+    transform: scale(1.1) ;
+    background: linear-gradient(to top, #ff8605, rgb(246, 81, 108));
+    color: white;
+}
+  .logo img{
+    max-width: 45.22px;
+    max-height: 45.22px;
+  }
+  .logo h3{
+    color: rgb(66, 66, 66);
+    font-family: Work Sans;
+    font-size: 35px;
+    font-weight: 700;
+  }
+  .logo p{
+    color: rgb(114, 114, 114);
+    font-family: Work Sans;
+    font-size: 20px;
+  }
+
+
+  /* fact responsive design */
+
+
+  @media (max-width: 576px){
+    .facts{
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        gap: 20px;
+        max-width: 100%;
+      }
+    .facts_title{
+        display: inline;
+        color: rgb(19, 19, 19);
+        font-size: 30px;
+        font-weight: 700;
+        text-align: center;
+        height: 20px;
+       
+        }
+        .facts_content{
+            justify-content: center;
+            align-content: center;
+        }
+        .facts_content_para{
+        color: rgb(114, 114, 114);
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 0%;
+        text-align: center;
+        }
+
+
+    .facts{
+        max-width: 80%;
+        justify-content: center;
+        align-items: center;
+    }
+    .fact_logo_container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+        align-items: center;
+        justify-items: center;
+        align-content: center;
+        justify-content: center;
+      }
+
+      .logo img{
+        max-width: 20px;
+        max-height: 20px;
+      }
+      .logo h3{
+        color: rgb(66, 66, 66);
+        font-family: Work Sans;
+        font-size: 20px;
+        font-weight: 700;
+      }
+      .logo p{
+        color: rgb(114, 114, 114);
+        font-family: Work Sans;
+        font-size: 16px;
+      }
+  }
+
+  @media (min-width: 576.1px) and (max-width: 768px) {
+    .facts{
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        gap: 20px;
+        max-width: 100%;
+      }
+    .facts_title{
+        display: inline;
+        color: rgb(19, 19, 19);
+        font-size: 30px;
+        font-weight: 700;
+        text-align: center;
+        height: 20px;
+       
+        }
+        .facts_content{
+            justify-content: center;
+            align-content: center;
+        }
+        .facts_content_para{
+        color: rgb(114, 114, 114);
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 0%;
+        text-align: center;
+        }
+
+
+    .facts{
+        max-width: 80%;
+        justify-content: center;
+        align-items: center;
+    }
+    .fact_logo_container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+        align-items: center;
+        justify-items: center;
+        align-content: center;
+        justify-content: center;
+      }
+
+      .logo img{
+        max-width: 20px;
+        max-height: 20px;
+      }
+      .logo h3{
+        color: rgb(66, 66, 66);
+        font-family: Work Sans;
+        font-size: 20px;
+        font-weight: 700;
+      }
+      .logo p{
+        color: rgb(114, 114, 114);
+        font-family: Work Sans;
+        font-size: 16px;
+      }
+  }
+  @media (min-width: 768.1px) and (max-width: 992px) {
+  
+    .facts{
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        gap: 20px;
+        max-width: 100%;
+      }
+    .facts_title{
+        display: inline;
+        color: rgb(19, 19, 19);
+        font-size: 30px;
+        font-weight: 700;
+        text-align: center;
+        height: 30px;
+       
+        }
+        .facts_content{
+            justify-content: center;
+            align-content: center;
+        }
+        .facts_content_para{
+        color: rgb(114, 114, 114);
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 0%;
+        text-align: center;
+        }
+
+
+    .facts{
+        max-width: 80%;
+        justify-content: center;
+        align-items: center;
+    }
+    .fact_logo_container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+        align-items: center;
+        justify-items: center;
+        align-content: center;
+        justify-content: center;
+      }
+
+      .logo img{
+        max-width: 45px;
+        max-height: 45px;
+      }
+      .logo h3{
+        color: rgb(66, 66, 66);
+        font-family: Work Sans;
+        font-size: 30px;
+        font-weight: 700;
+      }
+      .logo p{
+        color: rgb(114, 114, 114);
+        font-family: Work Sans;
+        font-size: 20px;
+      }
+
+  }
+  @media (min-width: 992.1px) and (max-width: 1200px) {
+    .facts{
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        gap: 20px;
+        max-width: 90%;
+      }
+
+      .fact_logo_container{
+        display: grid;
+       
+        grid-gap: 20px;
+        align-items: center;
+        justify-items: center;
+        align-content: center;
+        justify-content: center;
+      }
+  
+  }
+  @media (min-width: 1200.1px) and (max-width: 1600px) {
+   
+  }
